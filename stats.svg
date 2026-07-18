@@ -1,0 +1,56 @@
+<svg width="460" height="200" viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="statsRounded"><rect width="460" height="200" rx="16"/></clipPath>
+  <linearGradient id="statsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#071a2c"/>
+    <stop offset="100%" stop-color="#04121f"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#statsRounded)">
+  <rect width="460" height="200" fill="url(#statsBg)" stroke="#164e63"/>
+
+  <text x="24" y="34" font-family="Verdana, Arial, sans-serif" font-size="17" font-weight="bold" fill="#e2f6ff">Divya's GitHub Stats</text>
+  <line x1="24" y1="46" x2="200" y2="46" stroke="#22d3ee" stroke-width="2">
+    <animate attributeName="x2" values="24;200" dur="1s" fill="freeze"/>
+  </line>
+
+  <!-- stat rows sliding in -->
+  <g font-family="Verdana, Arial, sans-serif" font-size="14" fill="#cbeff8">
+    <g transform="translate(-40,0)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="-40,0;0,0" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.3s" fill="freeze"/>
+      <text x="24" y="80">⭐ Total Stars Earned</text>
+      <text x="330" y="80" text-anchor="end" fill="#67e8f9" font-weight="bold">18</text>
+    </g>
+    <g transform="translate(-40,0)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="-40,0;0,0" dur="0.5s" begin="0.5s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.5s" fill="freeze"/>
+      <text x="24" y="108">🏆 Total Commits</text>
+      <text x="330" y="108" text-anchor="end" fill="#67e8f9" font-weight="bold">640+</text>
+    </g>
+    <g transform="translate(-40,0)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="-40,0;0,0" dur="0.5s" begin="0.7s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.7s" fill="freeze"/>
+      <text x="24" y="136">🔀 Total PRs</text>
+      <text x="330" y="136" text-anchor="end" fill="#67e8f9" font-weight="bold">12</text>
+    </g>
+    <g transform="translate(-40,0)" opacity="0">
+      <animateTransform attributeName="transform" type="translate" values="-40,0;0,0" dur="0.5s" begin="0.9s" fill="freeze"/>
+      <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.9s" fill="freeze"/>
+      <text x="24" y="164">📦 Public Repos</text>
+      <text x="330" y="164" text-anchor="end" fill="#67e8f9" font-weight="bold">9</text>
+    </g>
+  </g>
+
+  <!-- rank ring -->
+  <g transform="translate(392,113)">
+    <circle r="52" fill="none" stroke="#0e3350" stroke-width="9"/>
+    <circle r="52" fill="none" stroke="#22d3ee" stroke-width="9" stroke-linecap="round"
+      stroke-dasharray="326.7" stroke-dashoffset="326.7" transform="rotate(-90)">
+      <animate attributeName="stroke-dashoffset" values="326.7;65" dur="1.6s" begin="0.4s" fill="freeze"/>
+    </circle>
+    <text y="-4" text-anchor="middle" font-family="Verdana" font-size="22" font-weight="bold" fill="#e2f6ff">A+</text>
+    <text y="16" text-anchor="middle" font-family="Verdana" font-size="10" fill="#7dd3fc">RANK</text>
+  </g>
+</g>
+</svg>

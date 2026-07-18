@@ -1,0 +1,72 @@
+<svg width="920" height="180" viewBox="0 0 920 180" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="trophiesRounded"><rect width="920" height="180" rx="16"/></clipPath>
+  <linearGradient id="trophiesBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#071a2c"/>
+    <stop offset="100%" stop-color="#04121f"/>
+  </linearGradient>
+  <linearGradient id="cellShine" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+</defs>
+<g clip-path="url(#trophiesRounded)">
+  <rect width="920" height="180" fill="url(#trophiesBg)" stroke="#164e63"/>
+
+  <!-- 5 trophy cells -->
+  <g font-family="Verdana, Arial, sans-serif">
+    <!-- template macro repeated manually -->
+    <g transform="translate(20,20)">
+      <g transform="scale(0)"><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;0.7;1" dur="0.6s" begin="0.2s" fill="freeze"/>
+        <rect width="160" height="140" rx="12" fill="#0a2033" stroke="#22d3ee"/>
+        <text x="80" y="40" text-anchor="middle" font-size="30">🏆</text>
+        <text x="80" y="70" text-anchor="middle" font-size="12" fill="#e2f6ff">Commits</text>
+        <text x="80" y="95" text-anchor="middle" font-size="20" font-weight="bold" fill="#22d3ee">S</text>
+        <text x="80" y="118" text-anchor="middle" font-size="10" fill="#7dd3fc">Grade</text>
+      </g>
+    </g>
+    <g transform="translate(200,20)">
+      <g transform="scale(0)"><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;0.7;1" dur="0.6s" begin="0.4s" fill="freeze"/>
+        <rect width="160" height="140" rx="12" fill="#0a2033" stroke="#22d3ee"/>
+        <text x="80" y="40" text-anchor="middle" font-size="30">⭐</text>
+        <text x="80" y="70" text-anchor="middle" font-size="12" fill="#e2f6ff">Stars</text>
+        <text x="80" y="95" text-anchor="middle" font-size="20" font-weight="bold" fill="#38bdf8">A</text>
+        <text x="80" y="118" text-anchor="middle" font-size="10" fill="#7dd3fc">Grade</text>
+      </g>
+    </g>
+    <g transform="translate(380,20)">
+      <g transform="scale(0)"><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;0.7;1" dur="0.6s" begin="0.6s" fill="freeze"/>
+        <rect width="160" height="140" rx="12" fill="#0a2033" stroke="#22d3ee"/>
+        <text x="80" y="40" text-anchor="middle" font-size="30">🔀</text>
+        <text x="80" y="70" text-anchor="middle" font-size="12" fill="#e2f6ff">Pull Requests</text>
+        <text x="80" y="95" text-anchor="middle" font-size="20" font-weight="bold" fill="#0ea5e9">A</text>
+        <text x="80" y="118" text-anchor="middle" font-size="10" fill="#7dd3fc">Grade</text>
+      </g>
+    </g>
+    <g transform="translate(560,20)">
+      <g transform="scale(0)"><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;0.7;1" dur="0.6s" begin="0.8s" fill="freeze"/>
+        <rect width="160" height="140" rx="12" fill="#0a2033" stroke="#22d3ee"/>
+        <text x="80" y="40" text-anchor="middle" font-size="30">📦</text>
+        <text x="80" y="70" text-anchor="middle" font-size="12" fill="#e2f6ff">Repositories</text>
+        <text x="80" y="95" text-anchor="middle" font-size="20" font-weight="bold" fill="#0284c7">B+</text>
+        <text x="80" y="118" text-anchor="middle" font-size="10" fill="#7dd3fc">Grade</text>
+      </g>
+    </g>
+    <g transform="translate(740,20)">
+      <g transform="scale(0)"><animateTransform attributeName="transform" type="scale" values="0;1.15;1" keyTimes="0;0.7;1" dur="0.6s" begin="1s" fill="freeze"/>
+        <rect width="160" height="140" rx="12" fill="#0a2033" stroke="#22d3ee"/>
+        <text x="80" y="40" text-anchor="middle" font-size="30">🔥</text>
+        <text x="80" y="70" text-anchor="middle" font-size="12" fill="#e2f6ff">Streak</text>
+        <text x="80" y="95" text-anchor="middle" font-size="20" font-weight="bold" fill="#22d3ee">A-</text>
+        <text x="80" y="118" text-anchor="middle" font-size="10" fill="#7dd3fc">Grade</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- shine sweep across whole card -->
+  <rect x="-200" y="0" width="200" height="180" fill="url(#cellShine)">
+    <animate attributeName="x" values="-200;920" dur="3.5s" begin="1.6s" repeatCount="indefinite"/>
+  </rect>
+</g>
+</svg>
